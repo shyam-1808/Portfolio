@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: bisque;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: lightgray;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: blueviolet;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #e74c3c;
+    }
+
+    .btn {
+      background-color: blueviolet;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      background: #fff;
+    }
+
+    .text {
+      max-width: 50%;
+    }
+
+    .text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .text h2 {
+      font-size: 28px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #ff4c60;
+    }
+
+    .highlight2 {
+      font-weight: bold;
+      color: #ff4c60;
+    }
+
+    .description {
+      font-size: 17px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    .main {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .secondary {
+      border: 2px solid #333;
+      color: #333;
+    }
+
+    .main:hover,
+    .secondary:hover {
+      background-color: blueviolet;
+      color: #fff;
+    }
+
+    .photo img {
+      height: 350px;
+      width: 300px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 5px 5px 10px rgb(77, 77, 77);
+      background-image: none;
+      background-size: cover;
+      margin-left: 10px;
+      margin-top: 50px;
+      margin-right: 100px;
+    }
+
+    section {
+      padding: 60px;
+      background-color: #f9fafb;
+    }
+
+    .projects h2,
+    .contact h2,
+    .about h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .projects ul {
+      list-style: none;
+      max-width: 800px;
+      margin: auto;
+      padding: 0;
+    }
+
+    .projects li {
+      background: #e0f7fa;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 5px solid #26a69a;
+    }
+
+    .contact p,
+    .contact a {
+      text-align: center;
+      font-size: 18px;
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #ff4c60;
+    }
+
+    .about .para {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+    }
+
+    .links {
+      text-decoration: none;
+      color: #444;
+      font-size: 20px;
+    }
+
+    
+
+      .text, .photo {
+        max-width: 100%;
+      }
+
+      .photo img {
+        margin-top: 30px;
+      }
+    
+    .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-icons a img {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: grayscale(100%);
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#" class="btn">GET STARTED</a>
+  </header>
+
+  <section class="content">
+    <div class="text">
+      <h1>Hi, I’m <span class="highlight">Shyam Sharma</span></h1>
+      <h2><span class="highlight2">a</span> Web Developer.</h2>
+      <p class="description">I create responsive and modern web applications that are fast, accessible, and user-friendly.</p>
+      <div class="buttons">
+        <a href="#about" class="main">Learn More</a>
+        <a href="#contact" class="secondary">Hire Me</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="img2.jpg" alt="Shyam Sharma" />
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong><a class="links" href="https://github.com/shyam-1808/web-development/blob/main/StudentData.html">Student Data</a></strong></li>
+      <li><strong><a class="links" href="https://github.com/shyam-1808/web-development/blob/main/Job%20Application%20Form.html">Employment Form </a> </strong> </li>
+      <li><strong><a class="links" href="https://github.com/shyam-1808/web-development/blob/main/Payment%20Form.html">Payment Form</a></strong> </li>
+    </ul>
+  </section>
+
+  
+  <section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>Email: 004shyam.ss@gmail.com</p>
+  <a href="#" target="_blank">Mobile - 9187835674</a>
+  <div class="social-icons">
+    <a href="https://github.com/shyam-1808" target="_blank" title="GitHub">
+      <img src="github-svgrepo-com.svg" alt="GitHub" />
+    </a>
+    <a href="https://www.linkedin.com/in/shyam-sharma-772950333" target="_blank" title="LinkedIn">
+      <img src="linkedin-161-svgrepo-com.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://instagram.com" target="_blank" title="Instagram">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram" />
+    </a>
+  </div>
+</section>
+
+  </section>
+
+  <section class="about" id="about">
+    <h1>About</h1>
+    <p class="para">Hi! I'm a passionate and detail-oriented Frontend Developer focused on building clean, responsive, and interactive user interfaces. I enjoy bringing designs to life using HTML, CSS, and JavaScript to deliver engaging digital experiences.</p>
+  </section>
+</body>
+</html>
